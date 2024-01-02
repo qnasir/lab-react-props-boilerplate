@@ -1,4 +1,4 @@
-gitimport './App.css';
+import './App.css';
 import elephant from "./images/elephant.jpeg";
 import React from 'react';
 
