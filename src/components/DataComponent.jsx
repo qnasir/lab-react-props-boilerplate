@@ -1,4 +1,4 @@
-import elephant from "./../images/elephant.jpeg"
+import elephant from "./../images/elephant.jpeg";
 
 export const imageData = () => {
   let data = [
@@ -21,4 +21,3 @@ export const imageData = () => {
   ];
   return data;
 };
-

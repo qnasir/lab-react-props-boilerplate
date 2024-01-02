@@ -1,28 +1,36 @@
-import './App.css';
-import React from "react"
+gitimport './App.css';
+import elephant from "./images/elephant.jpeg";
+import React from 'react';
+
+
+
 function App(props) {
-  let img_Arr = props.imageData();
-return (<div>
-<h1>
- Kalvium Gallery
-</h1>
-{/* <div className='gallery'>
-<img src={img_Arr[0].img} className='image'/>
-<img src={img_Arr[1].img} className='image'/>
-<img src={img_Arr[2].img} className='image'/>
-<img src={img_Arr[3].img} className='image'/>
-</div> */}
-<div className='parent'>
-{
-  img_Arr.map(elem=>{
-    return(
-    <img src={elem.img} className='image' />
-    )
-  })
-}
-</div>
-</div>
-);
+  // code here
+  let image_arr = props.imageData()
+  console.log(image_arr)
+  
+  return(
+     <div>
+        <h1 className="text">Kalvium gallery</h1>
+        {/* <div className="flex">
+          <img src={image_arr[0].img} alt="" />
+          <img src={image_arr[1].img} alt="" />
+          <img src={image_arr[2].img} alt="" />
+          <img src={image_arr[3].img} alt="" />
+        </div> */}
+
+        <div className="flex">
+          {
+           image_arr.map(elem=>{
+           return(
+            <img src={elem.img} alt="image" />
+             )
+           })
+          }
+        </div>
+     </div>
+    
+  )
 }
 
 export default App;
